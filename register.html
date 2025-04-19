@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="register-section">
+        <h2>Register for the Event</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="ticket">Ticket Type:</label>
+            <select id="ticket" name="ticket">
+                <option>Standard</option>
+                <option>VIP</option>
+                <option>Student</option>
+            </select>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
