@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-btn {
+    background: orange;
+    padding: 5px 10px;
+}
+
+/* Hero Section */
+.hero {
+    background:url('https://plus.unsplash.com/premium_photo-1724753995771-8ee6954e78da?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMGhhbGx8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+    color:yellow;
+    text-align:center;
+    padding: 100px 20px;
+   
+}
+
+.btn {
+    background: red;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+/* Sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:lightblue;
+}
+
+.speakers .speaker {
+    text-align: center;
+    background-color: lightblue;
+}
+.speaker h2{
+    margin:0px;
+}
+.speakers .speaker img {
+    width: 150px;
+    border-radius: 50%;
+    display: ;
+}
+
+/* Registration Form */
+.register-section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px gray;
+}
+
+form input, form select, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+ul a:hover{
+    color:red;
+}
+.speaker-container{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:lightblue;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <h1>NATIONAL STARS CONFERENCE 2025</h1>
+     
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#venue">Venue</a></li>
+                    <li><a href="register.html" class="register-btn">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Star Conference 2025</h2>
+            <p>Join stars and cricketers in a groundbreaking event.</p>
+            <a href="register.html" class="btn">Register Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container2">
+            <div class="about-text">
+                <h2>About the Conference</h2>
+                <p>Star Conference 2025 brings together teenagers, students, and other fans to meet and watch their favourites.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMa4UuEhlX_IT98Waof5l97LbJIxXFuDzpAQ&s" alt="Conference">
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers">
+        <h2 STYLE="background-color:pink;margin:0px;border:20px solid pink">MEET OUR STARS</h2>
+        <div class="speaker-container">
+            <div class="speaker">
+                <img src="https://im.rediff.com/cricket/2022/jun/13rohit1.jpg" alt="Speaker 1" style="position:relative;top:10px;">
+                <h3>ROHIT SHARMA</h3>
+            </div>
+            <div class="speaker">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Allu_Arjun_at_Pushpa_2_The_Rule_meet.jpg" alt="Speaker 2"style="position:relative;top:10px;">
+                <h3>ALLU ARJUN</h3>
+            </div>
+            <div class="speaker">
+                <img src="data:image/jpeg;base64,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" alt="Speaker 3"style="position:relative;top:10px;">
+                <h3>RASHMIKA MANDANNA</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- VenueSection -->
+    <section id="venue" class="venue">
+        <h2 STYLE="COLOR:green;font-weight:bold;background-color:pink;margin:0px;padding-top:10px;">Event Venue</h2>
+        <p STYLE="COLOR:red;font-weight:bold;background-color:pink;margin:0px;line-height:3em">The event will be held at the NIT PATNA</p>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Stars Conference. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
